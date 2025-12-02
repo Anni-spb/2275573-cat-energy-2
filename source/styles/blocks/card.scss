@@ -6,6 +6,22 @@
   text-transform: uppercase;
 }
 
+.card--special {
+  padding-block: 25px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    mask-image: url("./../../icons/stack.svg#icon-plus");
+    background-color: #d3d3d3;
+    margin-inline: auto;
+    margin-bottom: 23px;
+  }
+}
+
 .card--special .card__title {
   color: #111111;
 }

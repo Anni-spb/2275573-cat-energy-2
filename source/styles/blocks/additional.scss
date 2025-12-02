@@ -34,4 +34,14 @@
   text-align: center;
   color: $color-text-accent;
   background-color: $bg-color-accent;
+
+  &::before {
+    content: "";
+    display: block;
+    mask-image: url("./../../icons/stack.svg#icon-gift");
+    width: 78px;
+    height: 80px;
+    margin: 0 auto;
+    background: currentColor;
+  }
 }
