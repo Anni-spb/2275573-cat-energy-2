@@ -1,0 +1,37 @@
+.additional__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.additional__title {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-text-secondary;
+}
+
+.additional-card__link {
+  text-decoration: none;
+}
+
+.additional-card__title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.additional-card__details-block {
+  color: $color-text;
+  line-height: 14px;
+}
+
+.additional__text {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $color-text-accent;
+  background-color: $bg-color-accent;
+}

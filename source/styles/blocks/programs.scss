@@ -1,0 +1,26 @@
+.programs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.programs__item {
+  background-color: $bg-color-secondary;
+}
+
+.programs__title {
+  color: $color-text-secondary;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.programs__link {
+  color: $color-text-secondary;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}

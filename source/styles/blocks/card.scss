@@ -1,0 +1,20 @@
+.card__title {
+  color: #222222;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.card--special .card__title {
+  color: #111111;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__details {
+  font-size: 12px;
+  line-height: 16px;
+}

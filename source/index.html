@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header container">
     <a class="header__logo logo" href="index.html" aria-current="page">
       <picture>
         <source media="(min-width:1280px)" srcset="./images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
@@ -22,13 +22,13 @@
         <img class="logo__img" src="./images/logo-mobile.svg" width="33" height="38" alt="Логотип">
       </picture>
       <picture>
-        <source media="(min-width:1280px)" srcset="./images/logo-text.svg" width="118" height="21" type="image/svg+xml">
-        <img class="logo__img logo__img--text" src="./images/logo-text.svg" width="101" height="18" alt="Cat Energy">
+        <source media="(min-width:768px)" srcset="./images/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
+        <img class="logo__img logo__img--text" src="./images/logo-text-mobile.svg" width="101" height="18" lang="en" alt="Cat Energy">
       </picture>
     </a>
-    <nav class="nav container">
+    <nav class="nav">
       <button class="nav__toggle" type="button">
-        <span class="vissualy-hidden">Открыть/закрыть меню</span>
+        <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
       <ul class="nav__list">
         <li class="nav__item">
@@ -44,23 +44,25 @@
     </nav>
   </header>
 
-  <main class="main">
-    <section class="main__promo">
-      <h1 class="main__title">Функциональное питание для котов</h1>
-      <p class="main__slogan">Занялся собой? Займись котом!</p>
-      <picture>
-        <source media="(min-width:1280px)" srcset="./images/promo/promo-desktop@1x.webp 1x, ./images/promo/promo-desktop@2x.webp 2x" width="552" height="449" type="image/webp">
-        <source media="(min-width:1280px)" srcset="./images/promo/promo-desktop@1x.png 1x, ./images/promo/promo-desktop@2x.png 2x" width="552" height="449" type="image/png">
-        <source media="(min-width:768px)" srcset="./images/promo/promo-tablet@1x.webp 1x, ./images/promo/promo-tablet@2x.webp 2x" width="709" height="609" type="image/webp">
-        <source media="(min-width:768px)" srcset="./images/promo/promo-tablet@1x.png 1x, ./images/promo/promo-tablet@2x.png 2x" width="709" height="609" type="image/png">
-        <source srcset="./images/hero/hero-img@1x.webp 1x, ./images/hero/hero-img@2x.webp 2x" type="image/webp">
-        <img class="main__promo-img" src="./images/hero/hero-img@1x.png" srcset="./images/hero/hero-img@2x.png 2x" width="280" height="270" alt="Пример продукции">
-      </picture>
-      <a class="main__link" href="#">Подобрать программу</a>
+  <main class="page__main">
+    <section class="promo">
+      <div class="container">
+        <h1 class="promo__title title">Функциональное питание для котов</h1>
+        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <picture>
+          <source media="(min-width:1280px)" srcset="./images/promo/promo-desktop@1x.webp 1x, ./images/promo/promo-desktop@2x.webp 2x" width="552" height="449" type="image/webp">
+          <source media="(min-width:1280px)" srcset="./images/promo/promo-desktop@1x.png 1x, ./images/promo/promo-desktop@2x.png 2x" width="552" height="449" type="image/png">
+          <source media="(min-width:768px)" srcset="./images/promo/promo-tablet@1x.webp 1x, ./images/promo/promo-tablet@2x.webp 2x" width="709" height="609" type="image/webp">
+          <source media="(min-width:768px)" srcset="./images/promo/promo-tablet@1x.png 1x, ./images/promo/promo-tablet@2x.png 2x" width="709" height="609" type="image/png">
+          <source srcset="./images/promo/promo-mobile@1x.webp 1x, ./images/promo/promo-mobile@2x.webp 2x" type="image/webp">
+          <img class="promo__img" src="./images/promo/promo-mobile@1x.png" srcset="./images/promo/promo-mobile@2x.png 2x" width="280" height="270" alt="Пример продукции">
+        </picture>
+        <a class="promo__link button" href="#">Подобрать программу</a>
+      </div>
     </section>
 
-    <section class="programs">
-      <h2 class="vissualy-hidden">Типы программ питания</h2>
+    <section class="programs container">
+      <h2 class="visually-hidden">Типы программ питания</h2>
       <ul class="programs__list">
         <li class="programs__item programs__item--slim">
           <h3 class="programs__title">Похудение</h3>
@@ -75,7 +77,7 @@
       </ul>
     </section>
 
-    <section class="features">
+    <section class="features container">
       <h2 class="features__title">Как это работает</h2>
       <ul class="features__list">
         <li class="features__item features__item--nutrition">Функциональное питание содержит только полезные питательные вещества.</li>
@@ -86,40 +88,42 @@
     </section>
 
     <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__subtitle">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <dl class="example__list">
-        <div class="example__item example__item--weight">
-          <dt class="example__description example__description--weight">Снижение веса</dt>
-          <dd class="example__number example__number--weight">5 кг</dd>
+      <div class="container">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__subtitle">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <dl class="example__list">
+          <div class="example__item">
+            <dt class="example__description">Снижение веса</dt>
+            <dd class="example__number">5 кг</dd>
+          </div>
+          <div class="example__item example__item--time">
+            <dt class="example__description">Затрачено времени</dt>
+            <dd class="example__number">60 дней</dd>
+          </div>
+          <div class="example__item example__item--cost">
+            <dt class="example__expenses">Затраты на питание:</dt>
+            <dd class="example__total">15 000 руб.</dd>
+          </div>
+        </dl>
+        <div class="example__slider slider">
+          <picture>
+            <source media="(min-width:768px)" srcset="./images/slider/before-tablet@1x.webp 1x, ./images/slider/before-tablet@2x.webp 2x" width="560" height="512" type="image/webp">
+            <source media="(min-width:768px)" srcset="./images/slider/before-tablet@1x.png 1x, ./images/slider/before-tablet@2x.png 2x" width="560" height="512" type="image/png">
+            <source srcset="./images/slider/before-mobile@1x.webp 1x, ./images/slider/before-mobile@2x.webp 2x" type="image/webp">
+            <img class="slider__img slider__img--before" src="./images/slider/before-mobile@1x.png" srcset="./images/slider/before-mobile@2x.png 2x" width="280" height="256" alt="Кот до начала приема Cat energy">
+          </picture>
+          <div class="slider__curtain">
+            <button class="slider__thumb" type="button">
+              <span class="visually-hidden">Ползунок слайдера</span>
+            </button>
+          </div>
+          <picture>
+            <source media="(min-width:768px)" srcset="./images/slider/after-tablet@1x.webp 1x, ./images/slider/after-tablet@2x.webp 2x" width="560" height="512" type="image/webp">
+            <source media="(min-width:768px)" srcset="./images/slider/after-tablet@1x.png 1x, ./images/slider/after-tablet@2x.png 2x" width="560" height="512" type="image/png">
+            <source srcset="./images/slider/after-mobile@1x.webp 1x, ./images/slider/after-mobile@2x.webp 2x" type="image/webp">
+            <img class="slider__img slider__img--after" src="./images/slider/after-mobile@1x.png" srcset="./images/slider/after-mobile@2x.png 2x" width="280" height="256" alt="Кот после приема Cat energy">
+          </picture>
         </div>
-        <div class="example__item example__item--time">
-          <dt class="example__description example__description--time">Затрачено времени</dt>
-          <dd class="example__number example__number--time">60 дней</dd>
-        </div>
-        <div class="example__item example__item--cost">
-          <dt class="example__expenses">Затраты на питание:</dt>
-          <dd class="example__total">15 000 руб.</dd>
-        </div>
-      </dl>
-      <div class="example__slider slider">
-        <picture>
-          <source media="(min-width:768px)" srcset="./images/slider/before-tablet@1x.webp 1x, ./images/slider/before-tablet@2x.webp 2x" width="560" height="512" type="image/webp">
-          <source media="(min-width:768px)" srcset="./images/slider/before-tablet@1x.png 1x, ./images/slider/before-tablet@2x.png 2x" width="560" height="512" type="image/png">
-          <source srcset="./images/slider/before@1x.webp 1x, ./images/slider/before@2x.webp 2x" type="image/webp">
-          <img class="slider__img slider__img--before" src="./images/slider/before@1x.png" srcset="./images/slider/before@2x.png 2x" width="280" height="256" alt="Кот до начала приема Cat energy">
-        </picture>
-        <div class="slider__curtain">
-          <button class="slider__thumb" type="button">
-            <span class="visually-hidden">Ползунок слайдера</span>
-          </button>
-        </div>
-        <picture>
-          <source media="(min-width:768px)" srcset="./images/slider/after-tablet@1x.webp 1x, ./images/slider/after-tablet@2x.webp 2x" width="560" height="512" type="image/webp">
-          <source media="(min-width:768px)" srcset="./images/slider/after-tablet@1x.png 1x, ./images/slider/after-tablet@2x.png 2x" width="560" height="512" type="image/png">
-          <source srcset="./images/slider/after@1x.webp 1x, ./images/slider/after@2x.webp 2x" type="image/webp">
-          <img class="slider__img slider__img--after" src="./images/slider/after@1x.png" srcset="./images/slider/after@2x.png 2x" width="280" height="256" alt="Кот после приема Cat energy">
-        </picture>
       </div>
     </section>
   </main>
@@ -135,8 +139,8 @@
         <source media="(min-width:1280px)" srcset="./images/maps/maps-desktop@1x.jpg 1x, ./images/maps/maps-desktop@2x.jpg 2x" width="1440" height="400" type="image/jpeg">
         <source media="(min-width:768px)" srcset="./images/maps/maps-tablet@1x.webp 1x, ./images/maps/maps-tablet@2x.webp 2x" width="768" height="400" type="image/webp">
         <source media="(min-width:768px)" srcset="./images/maps/maps-tablet@1x.jpg 1x, ./images/maps/maps-tablet@2x.jpg 2x" width="768" height="400" type="image/jpeg">
-        <source srcset="./images/maps/maps@1x.webp 1x, ./images/maps/maps@2x.webp 2x" type="image/webp">
-        <img class="contacts__maps" src="./images/maps/maps@1x.jpg" srcset="./images/maps/maps@2x.jpg 2x" width="320" height="362" alt="Карта">
+        <source srcset="./images/maps/maps-mobile@1x.webp 1x, ./images/maps/maps-mobile@2x.webp 2x" type="image/webp">
+        <img class="contacts__maps" src="./images/maps/maps-mobile@1x.jpg" srcset="./images/maps/maps-mobile@2x.jpg 2x" width="320" height="362" alt="Карта">
       </picture>
     </div>
     <div class="footer__wrapper container">

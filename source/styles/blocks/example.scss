@@ -1,0 +1,31 @@
+.example {
+  background-color: $bg-color-dark;
+}
+
+.example__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-text-secondary;
+}
+
+.example__number {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-text-secondary;
+}
+
+.example__description {
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.example__expenses,
+.example__total {
+  color: $color-text-secondary;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
