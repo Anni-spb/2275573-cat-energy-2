@@ -30,6 +30,18 @@
   text-decoration: none;
 }
 
+.card__link-img {
+  justify-content: center;
+  align-items: center;
+  min-width: 140px;
+  min-height: 107px;
+  display: flex;
+}
+
+.card__img {
+  width: 100%;
+}
+
 .card__details {
   font-size: 12px;
   line-height: 16px;
