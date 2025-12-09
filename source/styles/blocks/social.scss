@@ -1,7 +1,16 @@
 .social {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  @include list-reset;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding-block: 20px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .social__link {
@@ -15,6 +24,15 @@
     height: 100%;
     content: "";
     background-color: #666666;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: $bg-color-accent;
+  }
+
+  &:active::before {
+    opacity: 0.3;
   }
 
   &--vk::before {
