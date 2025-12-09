@@ -1,0 +1,14 @@
+.nav__list {
+  font-family: $secondary-font;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.nav__link {
+  color: $color-text-secondary;
+  text-decoration: none;
+}

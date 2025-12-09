@@ -1,0 +1,45 @@
+.features__title {
+  color: $color-text-secondary;
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.features__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features__item {
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-color-accent;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--nutrition::before {
+    background-image: url("./../../icons/stack.svg#icon-leaf");
+    background-size: 30px 32px;
+  }
+
+  &--cooking::before {
+    background-image: url("./../../icons/stack.svg#icon-water");
+    background-size: 26px 29px;
+  }
+
+  &--usage::before {
+    background-image: url("./../../icons/stack.svg#icon-eat");
+    background-size: 25px 30px;
+  }
+
+  &--time::before {
+    background-image: url("./../../icons/stack.svg#icon-watch");
+    background-size: 26px 50px;
+  }
+}

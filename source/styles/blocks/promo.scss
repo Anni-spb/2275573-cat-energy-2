@@ -1,0 +1,16 @@
+.promo {
+  font-family: $secondary-font;
+  color: $color-text-accent;
+  text-align: center;
+  background: linear-gradient($bg-color-accent-opacity 55%, $bg-color 55%);
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__title {
+  color: inherit;
+}
