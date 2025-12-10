@@ -4,17 +4,13 @@
   box-sizing: border-box;
 }
 
-img {
-  object-fit: contain;
-  max-width: 100%;
-  height: auto;
-}
-
 .container {
-  padding: 0 20px;
-  margin: 0 auto;
+  padding-inline: 20px;
 
-  @media screen and (min-width: $tablet-width) {
-    padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-inline: 30px;
+    max-width: 1280px;
+    margin: 0 auto;
   }
 }
