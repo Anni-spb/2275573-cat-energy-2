@@ -135,17 +135,19 @@
         <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
         <address class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span>Санкт-Петербург</span></address>
       </div>
-      <picture>
-        <source media="(min-width:1280px)" srcset="./images/maps/maps-desktop@1x.webp 1x, ./images/maps/maps-desktop@2x.webp 2x" width="1440" height="400" type="image/webp">
-        <source media="(min-width:1280px)" srcset="./images/maps/maps-desktop@1x.jpg 1x, ./images/maps/maps-desktop@2x.jpg 2x" width="1440" height="400" type="image/jpeg">
-        <source media="(min-width:660px)" srcset="./images/maps/maps-tablet@1x.webp 1x, ./images/maps/maps-tablet@2x.webp 2x" width="768" height="400" type="image/webp">
-        <source media="(min-width:660px)" srcset="./images/maps/maps-tablet@1x.jpg 1x, ./images/maps/maps-tablet@2x.jpg 2x" width="768" height="400" type="image/jpeg">
-        <source srcset="./images/maps/maps-mobile@1x.webp 1x, ./images/maps/maps-mobile@2x.webp 2x" type="image/webp" width="320" height="362">
-        <img class="contacts__maps" src="./images/maps/maps-mobile@1x.jpg" srcset="./images/maps/maps-mobile@2x.jpg 2x" width="320" height="362" alt="Карта">
-      </picture>
+      <div class="map-wrapper">
+        <picture>
+          <source media="(min-width:1280px)" srcset="./images/maps/maps-desktop@1x.webp 1x, ./images/maps/maps-desktop@2x.webp 2x" width="1440" height="400" type="image/webp">
+          <source media="(min-width:1280px)" srcset="./images/maps/maps-desktop@1x.jpg 1x, ./images/maps/maps-desktop@2x.jpg 2x" width="1440" height="400" type="image/jpeg">
+          <source media="(min-width:660px)" srcset="./images/maps/maps-tablet@1x.webp 1x, ./images/maps/maps-tablet@2x.webp 2x" width="768" height="400" type="image/webp">
+          <source media="(min-width:660px)" srcset="./images/maps/maps-tablet@1x.jpg 1x, ./images/maps/maps-tablet@2x.jpg 2x" width="768" height="400" type="image/jpeg">
+          <source srcset="./images/maps/maps-mobile@1x.webp 1x, ./images/maps/maps-mobile@2x.webp 2x" type="image/webp" width="320" height="362">
+          <img class="contacts__maps" src="./images/maps/maps-mobile@1x.jpg" srcset="./images/maps/maps-mobile@2x.jpg 2x" width="320" height="362" alt="Карта">
+        </picture>
+      </div>
     </div>
     <div class="footer__wrapper">
-      <a class="footer__logo logo" href="index.html">
+      <a class="footer__logo logo" href="index.html" aria-current="page">
         <img class="logo__text logo__text--footer" src="./images/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy">
       </a>
       <ul class="footer__social social">

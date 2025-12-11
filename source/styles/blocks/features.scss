@@ -81,7 +81,7 @@
     }
 
     &::after {
-      content: counter(features__item);
+      content: counter("features__item");
       position: absolute;
       top: 0;
       right: 0;

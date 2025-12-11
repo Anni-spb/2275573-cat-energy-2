@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header container">
+  <header class="header header--inner container">
     <a class="header__logo logo" href="index.html">
       <picture>
         <source media="(min-width:1280px)" srcset="./images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
@@ -23,18 +23,19 @@
       </picture>
       <picture>
         <source media="(min-width:768px)" srcset="./images/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
-        <img class="logo__img logo__img--text" src="./images/logo-text-mobile.svg" width="101" height="18" lang="en" alt="Cat Energy">
+        <img class="logo__text" src="./images/logo-text-mobile.svg" width="101" height="18" lang="en" alt="Cat Energy">
       </picture>
     </a>
-    <nav class="nav">
-      <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span>
+    <nav class="header__nav nav nav--nojs">
+      <button class="nav__toggle" type="button">
+        <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link" href="index.html">Главная</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link nav__link--current" href="catalog.html" aria-current="page">Каталог продукции</a>
+          <a class="nav__link nav__link--current" href="#" aria-current="page">Каталог продукции</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="#">Подбор программы</a>
@@ -45,10 +46,10 @@
 
   <main class="page__main container">
     <section class="catalog">
-      <h1 class="catalog__title title">Каталог продукции</h1>
+      <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog__list">
         <li class="catalog__item card card--block">
-          <a class="card__link-img" href="#">
+          <a class="card__link-img" href="#" tabindex="-1">
             <picture>
               <source media="(min-width:768px)" srcset="./images/products/product-1-tablet@1x.webp 1x, ./images/products/product-1-tablet@2x.webp 2x" width="161" height="172" type="image/webp">
               <source media="(min-width:768px)" srcset="./images/products/product-1-tablet@1x.png 1x, ./images/products/product-1-tablet@2x.png 2x" width="161" height="172" type="image/png">
@@ -75,10 +76,10 @@
               </div>
             </dl>
           </div>
-          <a class="card__button button" href="#">Заказать</a>
+          <a class="card__button button button--primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item card card--block">
-          <a class="card__link-img" href="#">
+          <a class="card__link-img" href="#" tabindex="-1">
             <picture>
               <source media="(min-width:1280px)" srcset="./images/products/product-2-desktop@1x.webp 1x, ./images/products/product-2-desktop@2x.webp 2x" width="172" height="196" type="image/webp">
               <source media="(min-width:1280px)" srcset="./images/products/product-2-desktop@1x.png 1x, ./images/products/product-2-desktop@2x.png 2x" width="172" height="196" type="image/png">
@@ -107,10 +108,10 @@
               </div>
             </dl>
           </div>
-          <a class="card__button button" href="#">Заказать</a>
+          <a class="card__button button button--primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item card card--block">
-          <a class="card__link-img" href="#">
+          <a class="card__link-img" href="#" tabindex="-1">
             <picture>
               <source media="(min-width:768px)" srcset="./images/products/product-3-tablet@1x.webp 1x, ./images/products/product-3-tablet@2x.webp 2x" width="163" height="174" type="image/webp">
               <source media="(min-width:768px)" srcset="./images/products/product-3-tablet@1x.png 1x, ./images/products/product-3-tablet@2x.png 2x" width="163" height="174" type="image/png">
@@ -137,10 +138,10 @@
               </div>
             </dl>
           </div>
-          <a class="card__button button" href="#">Заказать</a>
+          <a class="card__button button button--primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item card card--block">
-          <a class="card__link-img" href="#">
+          <a class="card__link-img" href="#" tabindex="-1">
             <picture>
               <source media="(min-width:1280px)" srcset="./images/products/product-4-desktop@1x.webp 1x, ./images/products/product-4-desktop@2x.webp 2x" width="172" height="196" type="image/webp">
               <source media="(min-width:1280px)" srcset="./images/products/product-4-desktop@1x.png 1x, ./images/products/product-4-desktop@2x.png 2x" width="172" height="196" type="image/png">
@@ -169,10 +170,10 @@
               </div>
             </dl>
           </div>
-          <a class="card__button button" href="#">Заказать</a>
+          <a class="card__button button button--primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item card card--block">
-          <a class="card__link-img" href="#">
+          <a class="card__link-img" href="#" tabindex="-1">
             <picture>
               <source media="(min-width:768px)" srcset="./images/products/product-5-tablet@1x.webp 1x, ./images/products/product-5-tablet@2x.webp 2x" width="161" height="171" type="image/webp">
               <source media="(min-width:768px)" srcset="./images/products/product-5-tablet@1x.png 1x, ./images/products/product-5-tablet@2x.png 2x" width="161" height="171" type="image/png">
@@ -199,10 +200,10 @@
               </div>
             </dl>
           </div>
-          <a class="card__button button" href="#">Заказать</a>
+          <a class="card__button button button--primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item card card--block">
-          <a class="card__link-img" href="#">
+          <a class="card__link-img" href="#" tabindex="-1">
             <picture>
               <source media="(min-width:1280px)" srcset="./images/products/product-6-desktop@1x.webp 1x, ./images/products/product-6-desktop@2x.webp 2x" width="172" height="196" type="image/webp">
               <source media="(min-width:1280px)" srcset="./images/products/product-6-desktop@1x.png 1x, ./images/products/product-6-desktop@2x.png 2x" width="172" height="196" type="image/png">
@@ -231,10 +232,10 @@
               </div>
             </dl>
           </div>
-          <a class="card__button button" href="#">Заказать</a>
+          <a class="card__button button button--primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item card card--block">
-          <a class="card__link-img" href="#">
+          <a class="card__link-img" href="#" tabindex="-1">
             <picture>
               <source media="(min-width:768px)" srcset="./images/products/product-7-tablet@1x.webp 1x, ./images/products/product-7-tablet@2x.webp 2x" width="163" height="174" type="image/webp">
               <source media="(min-width:768px)" srcset="./images/products/product-7-tablet@1x.png 1x, ./images/products/product-7-tablet@2x.png 2x" width="163" height="174" type="image/png">
@@ -261,7 +262,7 @@
               </div>
             </dl>
           </div>
-          <a class="card__button button" href="#">Заказать</a>
+          <a class="card__button button button--primary" href="#">Заказать</a>
         </li>
         <li class="catalog__item card card--special">
           <div class="card__content">
@@ -277,7 +278,7 @@
 
     <section class="additional">
       <div class="additional__wrapper">
-        <h2 class="additional__title">Дополнительные товары</h2>
+        <h2 class="additional__title title-decor">Дополнительные товары</h2>
         <div class="additional__content">
           <ul class="additional__list">
             <li class="additional__item card card--line">
@@ -292,7 +293,7 @@
                   </div>
                 </dl>
               </div>
-              <a class="card__button button" href="#">Заказать</a>
+              <a class="card__button button button--primary" href="#">Заказать</a>
             </li>
             <li class="additional__item card card--line">
               <div class="card__content">
@@ -306,7 +307,7 @@
                   </div>
                 </dl>
               </div>
-              <a class="card__button button" href="#">Заказать</a>
+              <a class="card__button button button--primary" href="#">Заказать</a>
             </li>
             <li class="additional__item card card--line">
               <div class="card__content">
@@ -320,7 +321,7 @@
                   </div>
                 </dl>
               </div>
-              <a class="card__button button" href="#">Заказать</a>
+              <a class="card__button button button--primary" href="#">Заказать</a>
             </li>
             <li class="additional__item card card--line">
               <div class="card__content">
@@ -334,45 +335,47 @@
                   </div>
                 </dl>
               </div>
-              <a class="card__button button" href="#">Заказать</a>
+              <a class="card__button button button--primary" href="#">Заказать</a>
             </li>
           </ul>
-          <p class="additional__text">Закажите все и получите чехол для кота в подарок!</p>
+          <p class="additional__promo">
+            <span class="additional__promo-text">Закажите все<br> и получите чехол для кота в подарок!</span>
+          </p>
         </div>
       </div>
     </section>
 
     <section class="subscription">
-      <h2 class="subscription__title">Акции и новинки</h2>
+      <h2 class="subscription__title title-decor">Акции и новинки</h2>
       <p class="subscription__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="subscription__form form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="subscription__field">
-          <span class="visually-hidden">Введите свой email</span>
-          <input class="subscription__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-        </label>
-        <button class="subscription__button button button--size-xl" type="submit">Подписаться</button>
+        <label class="form__field visually-hidden" for="email">Введите свой email</label>
+        <input class="form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+        <button class="form__button button button--primary" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer__contacts contacts">
-      <div class="contacts__wrapper">
-        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <div class="contacts__wrapper contacts__wrapper--inner">
+        <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+        <address class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span>Санкт-Петербург</span></address>
       </div>
-      <picture>
-        <source media="(min-width:1280px)" srcset="./images/maps/maps-desktop@1x.webp 1x, ./images/maps/maps-desktop@2x.webp 2x" width="1440" height="400" type="image/webp">
-        <source media="(min-width:1280px)" srcset="./images/maps/maps-desktop@1x.jpg 1x, ./images/maps/maps-desktop@2x.jpg 2x" width="1440" height="400" type="image/jpeg">
-        <source media="(min-width:660px)" srcset="./images/maps/maps-tablet@1x.webp 1x, ./images/maps/maps-tablet@2x.webp 2x" width="768" height="400" type="image/webp">
-        <source media="(min-width:660px)" srcset="./images/maps/maps-tablet@1x.jpg 1x, ./images/maps/maps-tablet@2x.jpg 2x" width="768" height="400" type="image/jpeg">
-        <source srcset="./images/maps/maps-mobile@1x.webp 1x, ./images/maps/maps-mobile@2x.webp 2x" type="image/webp" width="320" height="362">
-        <img class="contacts__maps" src="./images/maps/maps-mobile@1x.jpg" srcset="./images/maps/maps-mobile@2x.jpg 2x" width="320" height="362" alt="Карта">
-      </picture>
+      <div class="map-wrapper">
+        <picture>
+          <source media="(min-width:1280px)" srcset="./images/maps/maps-desktop@1x.webp 1x, ./images/maps/maps-desktop@2x.webp 2x" width="1440" height="400" type="image/webp">
+          <source media="(min-width:1280px)" srcset="./images/maps/maps-desktop@1x.jpg 1x, ./images/maps/maps-desktop@2x.jpg 2x" width="1440" height="400" type="image/jpeg">
+          <source media="(min-width:660px)" srcset="./images/maps/maps-tablet@1x.webp 1x, ./images/maps/maps-tablet@2x.webp 2x" width="768" height="400" type="image/webp">
+          <source media="(min-width:660px)" srcset="./images/maps/maps-tablet@1x.jpg 1x, ./images/maps/maps-tablet@2x.jpg 2x" width="768" height="400" type="image/jpeg">
+          <source srcset="./images/maps/maps-mobile@1x.webp 1x, ./images/maps/maps-mobile@2x.webp 2x" type="image/webp" width="320" height="362">
+          <img class="contacts__maps" src="./images/maps/maps-mobile@1x.jpg" srcset="./images/maps/maps-mobile@2x.jpg 2x" width="320" height="362" alt="Карта">
+        </picture>
+      </div>
     </div>
-    <div class="footer__wrapper container">
+    <div class="footer__wrapper">
       <a class="footer__logo logo" href="index.html">
-        <img class="logo__img" src="./images/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy">
+        <img class="logo__text logo__text--footer" src="./images/logo-text-mobile.svg" width="128" height="24" alt="Cat Energy">
       </a>
       <ul class="footer__social social">
         <li class="social__item">

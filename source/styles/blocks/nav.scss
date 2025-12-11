@@ -1,14 +1,16 @@
 .nav {
   @media (max-width: ($tablet-width - 1px)) {
-    &--nojs {
-      .navigation__toggle {
-        visibility: hidden;
-      }
+    padding-top: 10px;
 
-      .navigation__list {
-        display: block;
-      }
+    .navigation__list {
+      display: block;
     }
+  }
+}
+
+.nav--nojs {
+  .navigation__toggle {
+    visibility: hidden;
   }
 }
 
@@ -89,7 +91,7 @@
 
 
   &:hover,
-  &:focus {
+  &:focus-within {
     opacity: 0.6;
   }
 
