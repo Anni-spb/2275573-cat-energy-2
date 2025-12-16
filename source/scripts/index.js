@@ -68,5 +68,3 @@ ymaps.ready(() => {
     placemarkImageSet(placemark);
   });
 });
-
-
