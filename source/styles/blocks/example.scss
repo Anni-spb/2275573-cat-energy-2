@@ -116,7 +116,6 @@
 .example__description {
   font-size: 12px;
   line-height: 12px;
-
   position: relative;
   top: -11px;
   width: min-content;
@@ -125,9 +124,11 @@
   text-align: center;
   background-color: #eaeaea;
 
+
   @media (min-width: $tablet-width) {
     display: inline-block;
     width: auto;
+    max-width: 145px;
     padding: 0 9px;
     font-size: 14px;
     line-height: 14px;
@@ -137,6 +138,10 @@
   @media (min-width: $desktop-width) {
     background-color: #f2f2f2;
   }
+}
+
+.example__statistics-wrapper:first-child .example__description {
+  max-width: 115px;
 }
 
 .example__cost {
