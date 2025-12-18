@@ -14,6 +14,7 @@
   grid-template-columns: 1fr 1fr;
   min-height: 60px;
   padding: 26px 20px;
+  background-color: $bg-color;
 
   @media (min-width: $tablet-width) {
     min-height: 80px;
@@ -28,7 +29,6 @@
     width: 565px;
     column-gap: 90px;
     padding: 60px 80px;
-    background-color: $bg-color;
     z-index: 1;
   }
 }
