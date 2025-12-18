@@ -1,3 +1,32 @@
+
+.catalog__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $color-text-secondary;
+  margin: 0 0 41px;
+  padding-top: 27px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 168px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
 .catalog__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 143px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 150px 80px;
+  }
 }

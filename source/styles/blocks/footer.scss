@@ -1,6 +1,9 @@
-.footer__wrapper {
+.footer {
   background-color: $bg-color-secondary;
-  padding: 40px 20px;
+}
+
+.footer__wrapper {
+  padding-block: 40px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -8,11 +11,11 @@
     align-items: center;
     flex-wrap: wrap;
     min-height: 38px;
-    padding: 43px 30px;
+    padding-block: 43px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 56px 110px;
+    padding-block: 56px;
   }
 }
 
@@ -55,7 +58,6 @@
     display: block;
     mask-image: url("./../../icons/stack.svg#logo-htmlacademy");
     background-color: #666666;
-    transition: 0.3s;
   }
 
   &:hover::after,

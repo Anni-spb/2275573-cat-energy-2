@@ -1,10 +1,167 @@
+.additional {
+  padding-block: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-block: 26px;
+  }
+}
+
+.additional__content {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    column-gap: 80px;
+  }
+}
+
 .additional__list {
   @include list-reset;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .additional__title {
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   color: $color-text-secondary;
+  margin-block: 0 38px;
+  position: relative;
+  width: fit-content;
+  margin: 0;
+  padding-right: 40px;
+  background-color: #ffffff;
+
+  @media (max-width: ($tablet-width - 1px)) {
+    margin-bottom: 34px;
+    box-shadow: -40px 0 0 0 #ffffff;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+    padding-left: 40px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    font-size: 40px;
+    line-height: 40px;
+    box-shadow: -40px 0 0 0 #ffffff;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100vw;
+    height: 2px;
+    background-color: #68b738;
+    box-shadow: 100vw 0 0 0 #68b738;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.additional__promo {
+  position: relative;
+  display: block;
+  padding: 58px 58px 43px;
+  text-align: center;
+  color: $color-text-accent;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:
+    linear-gradient($bg-color-accent-opacity, $bg-color-accent-opacity),
+    image-set(
+      "../images/additional/additional-bg-mobile@1x.webp" 1x type("image/webp"),
+      "../images/additional/additional-bg-mobile@1x.jpg" 1x type("image/jpeg"),
+      "../images/additional/additional-bg-mobile@2x.webp" 2x type("image/webp"),
+      "../images/additional/additional-bg-mobile@2x.jpg" 2x type("image/jpeg"),
+    ),
+    $line-gradient;
+  background-color: $bg-color-accent;
+
+  @media (min-width: $tablet-width) {
+    background-image:
+      linear-gradient($bg-color-accent-opacity, $bg-color-accent-opacity),
+      image-set(
+        "../images/additional/additional-bg-tablet@1x.webp" 1x type("image/webp"),
+        "../images/additional/additional-bg-tablet@1x.jpg" 1x type("image/jpeg"),
+        "../images/additional/additional-bg-tablet@2x.webp" 2x type("image/webp"),
+        "../images/additional/additional-bg-tablet@2x.jpg" 2x type("image/jpeg"),
+      ),
+      $line-gradient;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 125px 60px 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        "../images/additional/additional-bg-desktop@1x.webp" 1x type("image/webp"),
+        "../images/additional/additional-bg-desktop@1x.jpg" 1x type("image/jpeg"),
+        "../images/additional/additional-bg-desktop@2x.webp" 2x type("image/webp"),
+        "../images/additional/additional-bg-desktop@2x.jpg" 2x type("image/jpeg"),
+      ),
+      $line-gradient;
+    display: block;
+    padding: 55px 42px 43px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    mask-image: url("./../../icons/stack.svg#icon-gift");
+    width: 78px;
+    height: 80px;
+    margin-inline: auto;
+    background: currentColor;
+
+    @media (min-width: $tablet-width) {
+      margin-inline: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-inline: auto;
+      margin-bottom: 48px;
+    }
+  }
+}
+
+.additional__promo-text {
+  display: block;
+  margin-top: 47px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 161px;
+    margin-top: 0;
+    align-items: center;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }

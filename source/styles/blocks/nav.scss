@@ -1,13 +1,17 @@
 .nav {
   @media (max-width: ($tablet-width - 1px)) {
-    &--nojs {
-      .navigation__toggle {
-        visibility: hidden;
-      }
+    padding: 10px;
+  }
+}
 
-      .navigation__list {
-        display: block;
-      }
+.nav--nojs {
+  @media (max-width: ($tablet-width - 1px)) {
+    .nav__toggle {
+      visibility: hidden;
+    }
+
+    .nav__list {
+      display: block;
     }
   }
 }
@@ -49,7 +53,6 @@
     &--opened {
       position: absolute;
       left: 0;
-      right: 0;
       display: block;
       background-color: #ffffff;
       z-index: 1;
@@ -89,7 +92,7 @@
 
 
   &:hover,
-  &:focus {
+  &:focus-within {
     opacity: 0.6;
   }
 
