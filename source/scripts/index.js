@@ -10,9 +10,9 @@ menuToggle.addEventListener ('click', () => {
 /* КАРТА */
 const getCenter = () => {
   if (window.innerWidth < 1280) {
-    return [59.938631, 30.323037];
+    return [59.938592, 30.322989];
   } else {
-    return [59.938565, 30.317988];
+    return [59.938875, 30.317778];
   }
 };
 
@@ -54,7 +54,7 @@ ymaps.ready(() => {
     controls: ['zoomControl']
   });
 
-  const placemark = new ymaps.Placemark([59.938631, 30.323037], {}, {
+  const placemark = new ymaps.Placemark([59.938592, 30.322989], {}, {
     iconLayout: 'default#image',
   });
   placemarkImageSet(placemark);
@@ -64,7 +64,7 @@ ymaps.ready(() => {
     const newCenter = getCenter();
     map.setCenter(newCenter);
 
-    placemark.geometry.setCoordinates([59.938631, 30.323037]);
+    placemark.geometry.setCoordinates([59.938592, 30.322989]);
     placemarkImageSet(placemark);
   });
 });

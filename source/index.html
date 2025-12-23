@@ -9,6 +9,8 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=b741650d-aeca-472d-a761-ce8550b60bb1&lang=ru_RU" defer></script>
   <script src="scripts/index.js" defer></script>
@@ -143,7 +145,7 @@
           <source media="(min-width:660px)" srcset="./images/maps/maps-tablet@1x.webp 1x, ./images/maps/maps-tablet@2x.webp 2x" width="768" height="400" type="image/webp">
           <source media="(min-width:660px)" srcset="./images/maps/maps-tablet@1x.jpg 1x, ./images/maps/maps-tablet@2x.jpg 2x" width="768" height="400" type="image/jpeg">
           <source srcset="./images/maps/maps-mobile@1x.webp 1x, ./images/maps/maps-mobile@2x.webp 2x" type="image/webp" width="320" height="362">
-          <img class="contacts__map-img" src="./images/maps/maps-mobile@1x.jpg" srcset="./images/maps/maps-mobile@2x.jpg 2x" width="320" height="362" alt="Карта">
+          <img class="contacts__map-img" src="./images/maps/maps-mobile@1x.jpg" srcset="./images/maps/maps-mobile@2x.jpg 2x" width="320" height="362" alt="Карта" loading="lazy">
         </picture>
       </div>
     </div>
