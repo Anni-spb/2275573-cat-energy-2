@@ -316,16 +316,6 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
-  }
-
-  @media (min-width: $desktop-width) {
-    text-align: left;
-    width: 285px;
-  }
-}
-
-.card--line .card__details-block {
-  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 51px;
     gap: 39px;
@@ -333,15 +323,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    text-align: left;
     width: 306px;
     grid-template-columns: 1fr 61px;
     justify-items: start;
   }
 }
-
-.card--line .card__details-desc {
-  @media (min-width: $tablet-width) {
-    margin-inline: 0;
-  }
-}
-
