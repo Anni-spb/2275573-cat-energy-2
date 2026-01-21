@@ -77,4 +77,3 @@ ymaps.ready(() => {
     map.container.fitToViewport();
   },1000);
 });
-
