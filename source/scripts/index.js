@@ -71,9 +71,10 @@ ymaps.ready(() => {
   setInterval(() =>{
     document.querySelectorAll('#map ymaps')[0].style.height = 'auto';
     document.querySelectorAll('#map ymaps')[1].style.height = 'auto';
-    const h = `${document.querySelector('#map').offsetHeight}px`;
-    document.querySelectorAll('#map ymaps')[0].style.height = h;
-    document.querySelectorAll('#map ymaps')[1].style.height = h;
+    const height = `${document.querySelector('#map').offsetHeight}px`;
+    document.querySelectorAll('#map ymaps')[0].style.height = height;
+    document.querySelectorAll('#map ymaps')[1].style.height = height;
     map.container.fitToViewport();
   },1000);
 });
+

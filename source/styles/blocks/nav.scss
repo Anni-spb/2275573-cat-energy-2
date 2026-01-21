@@ -1,12 +1,12 @@
-.nav--nojs {
+.nav--nojs .nav-toggle {
   @media (max-width: ($tablet-width - 1px)) {
-    .nav__toggle {
-      visibility: hidden;
-    }
+    visibility: hidden;
+  }
+}
 
-    .nav__list {
-      display: block;
-    }
+.nav--nojs .nav-list {
+  @media (max-width: ($tablet-width - 1px)) {
+    display: block;
   }
 }
 
