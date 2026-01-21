@@ -13,9 +13,9 @@
   color: inherit;
   background-color: $bg-color;
   width: 100%;
-  padding: 13px;
+  padding: 12px;
   border: 1px solid #e7e7e7;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   z-index: 1;
 
 
@@ -49,14 +49,17 @@
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 470px;
+    max-width: 496px;
     margin-bottom: 0;
   }
 }
 
 
 .form__button {
+  font-size: 20px;
+  line-height: 26px;
   width: 100%;
+  padding: 15px;
 
   @media (min-width: $tablet-width) {
     max-width: 256px;

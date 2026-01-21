@@ -6,17 +6,18 @@
     width: 100%;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 25px;
+    padding-top: 27px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-block: 55px 48px;
+    padding-top: 55px;
   }
 }
 
 .header__logo {
   display: flex;
   gap: 56px;
+  padding-bottom: 10px;
 
 
   @media (min-width: $tablet-width) {
@@ -26,7 +27,7 @@
 
 .header__nav {
   @media (min-width: $tablet-width) {
-    margin-right: 6px;
+    margin-right: 4px;
     width: 65%;
   }
 
@@ -50,5 +51,15 @@
       height: 1px;
       background-color: #d9d9d9;
     }
+  }
+}
+
+.header--inner:has(.nav--nojs)::after {
+  display: none;
+}
+
+.header--inner .logo__text {
+  @media (max-width: ($tablet-width - 1px)) {
+    margin-top: 5px;
   }
 }

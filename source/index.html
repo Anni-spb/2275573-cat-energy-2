@@ -9,6 +9,8 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=b741650d-aeca-472d-a761-ce8550b60bb1&lang=ru_RU" defer></script>
   <script src="scripts/index.js" defer></script>
@@ -111,7 +113,7 @@
               <source media="(min-width:768px)" srcset="./images/slider/before-tablet@1x.webp 1x, ./images/slider/before-tablet@2x.webp 2x" width="560" height="512" type="image/webp">
               <source media="(min-width:768px)" srcset="./images/slider/before-tablet@1x.png 1x, ./images/slider/before-tablet@2x.png 2x" width="560" height="512" type="image/png">
               <source srcset="./images/slider/before-mobile@1x.webp 1x, ./images/slider/before-mobile@2x.webp 2x" type="image/webp" width="280" height="256">
-              <img class="slider__img slider__img--before" src="./images/slider/before-mobile@1x.png" srcset="./images/slider/before-mobile@2x.png 2x" width="280" height="256" alt="Кот до начала приема Cat energy">
+              <img class="slider__img slider__img--before" src="./images/slider/before-mobile@1x.png" srcset="./images/slider/before-mobile@2x.png 2x" width="280" height="256" alt="Кот до начала приема Cat energy" loading="lazy">
             </picture>
           </div>
           <div class="slider__img-after">
@@ -119,7 +121,7 @@
               <source media="(min-width:768px)" srcset="./images/slider/after-tablet@1x.webp 1x, ./images/slider/after-tablet@2x.webp 2x" width="560" height="512" type="image/webp">
               <source media="(min-width:768px)" srcset="./images/slider/after-tablet@1x.png 1x, ./images/slider/after-tablet@2x.png 2x" width="560" height="512" type="image/png">
               <source srcset="./images/slider/after-mobile@1x.webp 1x, ./images/slider/after-mobile@2x.webp 2x" type="image/webp">
-              <img class="slider__img slider__img--after" src="./images/slider/after-mobile@1x.png" srcset="./images/slider/after-mobile@2x.png 2x" width="280" height="256" alt="Кот после приема Cat energy">
+              <img class="slider__img slider__img--after" src="./images/slider/after-mobile@1x.png" srcset="./images/slider/after-mobile@2x.png 2x" width="280" height="256" alt="Кот после приема Cat energy" loading="lazy">
             </picture>
           </div>
           <button class="slider__range" type="button">
@@ -137,14 +139,16 @@
         <address class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span>Санкт-Петербург</span></address>
       </div>
       <div class="contacts__map" id="map">
-        <picture>
-          <source media="(min-width:1280px)" srcset="./images/maps/maps-desktop@1x.webp 1x, ./images/maps/maps-desktop@2x.webp 2x" width="1440" height="400" type="image/webp">
-          <source media="(min-width:1280px)" srcset="./images/maps/maps-desktop@1x.jpg 1x, ./images/maps/maps-desktop@2x.jpg 2x" width="1440" height="400" type="image/jpeg">
-          <source media="(min-width:660px)" srcset="./images/maps/maps-tablet@1x.webp 1x, ./images/maps/maps-tablet@2x.webp 2x" width="768" height="400" type="image/webp">
-          <source media="(min-width:660px)" srcset="./images/maps/maps-tablet@1x.jpg 1x, ./images/maps/maps-tablet@2x.jpg 2x" width="768" height="400" type="image/jpeg">
-          <source srcset="./images/maps/maps-mobile@1x.webp 1x, ./images/maps/maps-mobile@2x.webp 2x" type="image/webp" width="320" height="362">
-          <img class="contacts__map-img" src="./images/maps/maps-mobile@1x.jpg" srcset="./images/maps/maps-mobile@2x.jpg 2x" width="320" height="362" alt="Карта">
-        </picture>
+        <noscript>
+          <picture>
+            <source media="(min-width:1280px)" srcset="./images/maps/maps-desktop@1x.webp 1x, ./images/maps/maps-desktop@2x.webp 2x" width="1440" height="400" type="image/webp">
+            <source media="(min-width:1280px)" srcset="./images/maps/maps-desktop@1x.jpg 1x, ./images/maps/maps-desktop@2x.jpg 2x" width="1440" height="400" type="image/jpeg">
+            <source media="(min-width:660px)" srcset="./images/maps/maps-tablet@1x.webp 1x, ./images/maps/maps-tablet@2x.webp 2x" width="768" height="400" type="image/webp">
+            <source media="(min-width:660px)" srcset="./images/maps/maps-tablet@1x.jpg 1x, ./images/maps/maps-tablet@2x.jpg 2x" width="768" height="400" type="image/jpeg">
+            <source srcset="./images/maps/maps-mobile@1x.webp 1x, ./images/maps/maps-mobile@2x.webp 2x" type="image/webp" width="320" height="362">
+            <img class="contacts__map-img" src="./images/maps/maps-mobile@1x.jpg" srcset="./images/maps/maps-mobile@2x.jpg 2x" width="320" height="362" alt="Карта" loading="lazy">
+          </picture>
+        </noscript>
       </div>
     </div>
     <div class="footer__wrapper container">
