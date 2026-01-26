@@ -6,7 +6,10 @@
 @import "./common/visually-hidden.scss";
 
 /* BLOCKS */
+@import "./blocks/container.scss";
 @import "./blocks/button.scss";
+@import "./blocks/inner-title.scss";
+@import "./blocks/title-decor.scss";
 @import "./blocks/page.scss";
 @import "./blocks/header.scss";
 @import "./blocks/logo.scss";
@@ -27,3 +30,12 @@
 @import "./blocks/additional.scss";
 @import "./blocks/subscription.scss";
 @import "./blocks/form.scss";
+
+
+/* SELECTION */
+@import "./blocks/selection.scss";
+@import "./blocks/user-form.scss";
+@import "./blocks/program-form.scss";
+@import "./blocks/contacts-form.scss";
+@import "./blocks/comments-form.scss";
+@import "./blocks/extra-form.scss";

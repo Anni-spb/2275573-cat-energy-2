@@ -31,8 +31,12 @@
     margin-bottom: 0;
   }
 
+  @media (min-width: $tablet-width) {
+    max-width: 492px;
+  }
+
   &:hover {
-    border: 1px solid #cdcdcd;
+    outline: 1px solid #cdcdcd;
   }
 
   &:focus {
@@ -44,16 +48,13 @@
     opacity: 0.3;
   }
 
-  &:required:focus:invalid {
+  // &:required:focus:invalid {
+  //   outline: 2px solid #ff8282;
+  // }
+  &:user-invalid {
     outline: 2px solid #ff8282;
   }
-
-  @media (min-width: $tablet-width) {
-    max-width: 496px;
-    margin-bottom: 0;
-  }
 }
-
 
 .form__button {
   font-size: 20px;

@@ -1,17 +1,9 @@
-
 .catalog__title {
-  font-family: $secondary-font;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  color: $color-text-secondary;
   margin-block: 28px 42px;
 
 
   @media (min-width: $tablet-width) {
     margin-block: 50px 166px;
-    font-size: 60px;
-    line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
