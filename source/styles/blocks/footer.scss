@@ -15,11 +15,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-block: 42px;
+    padding-block: 57px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-block: 53px;
+    padding-block: 70px;
   }
 }
 
@@ -39,6 +39,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 250px;
+    margin-bottom: 0;
   }
 }
 
